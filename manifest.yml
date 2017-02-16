@@ -1,0 +1,12 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: AnoopFirstTomcatApp
+  host: AnoopFirstTomcatApp
+  disk_quota: 1024M
+  services:
+  - ClearDB MySQL Database-2l
+  - ClearDB MySQL Database-xb
+  buildpack: java_buildpack
